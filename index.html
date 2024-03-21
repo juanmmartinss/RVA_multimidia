@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juan Marcos Martins</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imagens/livros.png">
+    </head>
+
+    <body>
+
+        <section id="Sobre">
+            <div class="Sobre">
+                <h2> Demonstrar de maneira criativa o conceito de "multimídia" </h2>
+            </div>
+
+            <div class="container_dois">
+                
+                <div class="flip_dois">
+                    <div class="front_dois">
+                        <h2>Girafa</h2>
+                    </div>
+                    
+                    <div class="back_dois">
+    
+                        <div class="image">
+                            <a>
+                                <img src="imagens/girafa.jpg" alt="Pessoal">
+                                
+                            </a>
+
+                            
+                        </div>
+
+                        <audio id="girafaSound" src="sons/gifaraSom.mp3"></audio>
+
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="container_tres">
+                <div class="flip_tres">
+                    <div class="front_tres">
+                        <h2>Leão</h2>
+                    </div>
+                    <div class="back_tres">
+                        <div class="image">
+                                <img src="imagens/leao.jpg" alt="Tempo livre">
+                            </a>
+                            <audio id="leaoSound" src="sons/leaoSom.mp3"></audio>
+                        </div>
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const flipDois = document.querySelector('.flip_dois');
+            const girafaSound = document.getElementById('girafaSound');
+
+            flipDois.addEventListener('click', function() {
+                // Toca o som da girafa quando o card correspondente é clicado
+                girafaSound.play();
+            });
+
+
+            const flipTres = document.querySelector('.flip_tres');
+            const leaoSound = document.getElementById('leaoSound');
+            flipTres.addEventListener('click', function() {
+                leaoSound.play();
+            });
+
+            // Repita para outros cards conforme necessário
+            });
+
+        </script>
+    </body>
+</html>
